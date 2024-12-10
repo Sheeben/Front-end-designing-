@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front-end-design</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        header{
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+            padding: 20px;
+            font-family: Arial;
+            font-size: 30px;
+        }
+       .bi-youtube{
+        color: red;
+        margin-right: -20px;
+        
+       }
+       .main-title{
+        font-weight: bold;
+        margin-left: 20px;
+        
+        
+
+       }
+       .youtube-title{
+        position: relative;
+        font-size: 40px;
+        
+       }
+       .in{
+        display: inline-block;
+        font-size: 16px;
+        color: gray;
+        position: absolute;
+        top: -5px;
+       }
+       .search{
+        display: inline-block;
+        border: 1px solid gray;
+        border-radius: 40px;
+        width: 900px;
+        padding: 10px;
+        margin-left: -60px;
+       }
+       .bi-search{
+        padding-left: 80%;
+       }
+       .bi-mic-fill{
+        background-color: gainsboro;
+        width: 300px;
+        padding: 15px;
+        border-radius: 30px;
+        margin-left: 15px;
+       
+       }
+       .profile{
+        border-radius: 50px;
+        width: 55px;
+        height: 55px;
+       }
+       .div3 span{
+        font-size: 35px;
+        margin-left: 30px;
+        margin-right: 30px;
+        
+       }
+       section{
+        display: grid;
+        grid-template-columns: 2fr 10fr;
+        
+       }
+       nav div{
+        font-size: 35px;
+        margin-bottom: 50px;
+        margin-left: 40px; 
+        
+       }
+      main{
+        margin-top: 10px;
+        margin-left: -10%;
+        
+      }
+      main img{
+        border-radius: 20px;
+      }
+      nav p{
+        font-family: Arial;
+        font-size: 15px;
+      }
+      article{
+        display: grid;
+        grid-template-columns: 2fr 10fr;
+        margin-top: 40px;
+        font-family: Arial;
+      }
+      
+      .article-title{
+        font-size: 50px;
+        font-weight: bold;
+      }
+      article div{
+        margin-bottom: 30px;
+        font-size: 20px;
+      }
+      .channel-profile img{
+        border-radius: 50%;
+      }
+      .subscribe{
+        background-color: gainsboro;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        margin-left: 100%;
+        margin-top: -40px;
+        width: 75%;
+        height: 60%;
+        border-radius: 50px;
+        text-align: center;
+      }
+      .menu {
+            font-size: 20px;
+            font-family: Arial;
+            border-bottom: 1px solid gray;
+            padding-bottom: 20px;
+        }
+        .menu span {
+            margin-right: 35px;
+        }
+        .menu .bi-search{
+            margin-left: -80%;
+        }
+      .Videos{
+        display: grid;
+        grid-template-columns: 2.4fr 2.4fr 2.4fr 2.4fr 2.4fr;
+        margin-top: 50px;
+        margin-bottom: 3%;
+       
+           
+      }
+      .iframe-name{
+        border-radius: 10px;
+        height: 50%;
+        width: 90%;
+      }
+      .full-caption{
+        color: black;
+        font-family: Arial;
+        font-weight: bold;
+        font-size: 18px;
+      }
+      .view{
+        color: gray;
+        font-size: 20px;
+        font-family: Arial;
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="youtube-title">
+            <span class="bi bi-list"></span>
+            <span class="bi bi-youtube"></span><span class="main-title">YouTube</span><span class="in"> IN </span>   
+        </div>
+
+        <div>   
+            <span class="search">
+            <span class="search-name">search</span>    
+            <span class="bi bi-search"></span>
+            </span>
+            
+            <span class="bi bi-mic-fill"></span>
+        </div>
+
+        <div class="div3">
+            <span class="bi bi-camera-video"></span>
+            <span class="bi bi-bell-fill"></span>
+            <img src="images/myimage.jpg" class="profile" width="20" height="20">
+        </div>
+    </header>
+    <section>
+       <nav>
+        <div class="bi bi-house-door"><p>Home</p></div>
+        <div class="shorts"><img src="./images/shorts.jpeg"><p>Shorts</p></div>
+        <div class="bi bi-collection-play"><p>Subscriptions</p></div>
+        <div class="bi bi-play-btn"><p>You</p></div>
+        <div class="bi bi-arrow-down"><p>Downloads</p></div>
+       </nav>
+       <main>
+        <img src="images/OIP.jpeg" width="98%" height="20%">
+        <article>
+            <div class="channel-profile">
+              <img src="images/channels_profile.jpg" width="90%">
+            </div>
+            <div>
+                <div class="article-title">BANGTANTV</div>
+                <div>@BTS ‧ 77.5M subscribers ‧ 2.4K videos</div>
+                <div>This is the official YouTube channel of BTS. 방탄소년단 공식 유튜브 채널 입니다.</div>
+                <div>bts.ibighit.com and 6 more links</div>
+            </div>
+            <div class="subscribe">
+                <span class="bi bi-bell"></span>
+                <span>Subscribed</span>
+                <span  class="bi bi-chevron-down"></span>
+            </div>
+        </article>
+        <div class="menu">
+            <span>Home</span>
+            <span>Video</span>
+            <span>Shorts</span>
+            <span>Live</span>
+            <span>Playlist</span>
+            <span>Community</span>
+            <span class="bi bi-search"></span>
+        </div>
+
+        <div class="Videos">
+          <div>
+            <iframe src="https:/www.youtube.com/embed/hIViwGucb18" class="iframe-name"></iframe>
+              <div class="caption">
+                <p class="full-caption">[EPISODE] 'Love wins all’ MV Shoot</p>
+                <p class="full-caption">Sketch - BTS (방탄소년단)</p>
+                <p class="view">2.7M views <span class="bi bi-dot"></span>1 month ago</p>
+              </div>
+          </div>
+          <div>
+            <iframe src="https:/www.youtube.com/embed/l1-00U3GIsI" class="iframe-name"></iframe>
+            <div class="caption">
+              <p class="full-caption">SUGA | Agust D TOUR 'D-DAY'</p>
+              <p class="full-caption"> in the USA - BTS (방탄소년단)</p>
+              <p class="view">911K views<span class="bi bi-dot"></span>2 days ago</p>
+            </div>
+          </div>  
+          <div>
+            <iframe src="https:/www.youtube.com/embed/GkCCWRtPsvQ" class="iframe-name"></iframe>
+            <div class="caption">
+              <p class="full-caption">[슈취타] EP.27 SUGA with 장이정</p>
+              <p class="full-caption">Sketch - BTS (방탄소년단)</p>
+              <p class="view"> 1.4M views<span class="bi bi-dot"></span>2 weeks ago</p>
+            </div>
+          </div>  
+          <div>
+            <iframe src="https:/www.youtube.com/embed/STmgMidTEbI" class="iframe-name"></iframe>
+            <div class="caption">
+              <p class="full-caption">[ENG SUB] BTS WEVERSE LIVE</p>
+              <p class="full-caption">JUNGKOOK,V,JIMIN & J-HOPE LIVE</p>
+              <p class="view">4.8M views <span class="bi bi-dot"></span>1 year ago</p>
+            </div>
+          </div>
+          <div>
+            <iframe src="https:/www.youtube.com/embed/L8vEWO0U8sI" class="iframe-name"></iframe>
+            <div class="caption">
+              <p class="full-caption">'Don’t ever say love me(Feat. RM of BTS)</p>
+              <p class="full-caption">Live Clip Sketch - BTS (방탄소년단)</p>
+              <p class="view">4.9M views <span class="bi bi-dot"></span>6 month ago</p>
+            </div>
+          </div>  
+        </div>
+
+
+        <div class="Videos">
+          <div>
+            <iframe src="https:/www.youtube.com/embed/-YLAcTVcq7U" class="iframe-name"></iframe>
+            <div>
+              <div class="caption">
+                <p class="full-caption">[슈취타] EP.25 SUGA with 정용화</p>
+                <p class="full-caption">Live Clip Sketch - BTS (방탄소년단)</p>
+                <p class="view">1.5M views <span class="bi bi-dot"></span>1 month ago</p>
+              </div>
+            </div>  
+          </div>
+          <div>
+            <iframe src="https:/www.youtube.com/embed/_p8tLsvqFYg" class="iframe-name"></iframe>
+            <div>
+              <div class="caption">
+                <p class="full-caption">RM, Jimin, V, Jung Kook’s</p>
+                <p class="full-caption">Entrance Ceremony with BTS</p>
+                <p class="view">4.8M views <span class="bi bi-dot"></span>2 month ago</p>
+              </div>
+            </div>  
+          </div>
+          <div>
+            <iframe src="https:/www.youtube.com/embed/q4154HSQ4C8" class="iframe-name"></iframe>
+            <div>
+              <div class="caption">
+                <p class="full-caption">BTS (방탄소년단) 'PERMISSION TO </p>
+                <p class="full-caption">DANCE ON STAGE in THE US' SPOT #3</p>
+                <p class="view">4.9M views <span class="bi bi-dot"></span>3 month ago</p>
+              </div>
+            </div>  
+          </div>
+          <div>  
+            <iframe src="https:/www.youtube.com/embed/RGYkRNdsd1Y" class="iframe-name"></iframe>
+            <div>
+              <div class="caption">
+                <p class="full-caption">'Jimin's Production Diary' Main Trailer</p>
+                <p class="full-caption">Live Clip Sketch - BTS (방탄소년단)</p>
+                <p class="view">1.2M views <span class="bi bi-dot"></span>4 month ago</p>
+              </div>
+            </div>  
+          </div>
+          <div>  
+            <iframe src="https:/www.youtube.com/embed/L8vEWO0U8sI" class="iframe-name"></iframe>
+            <div>
+              <div class="caption">
+                <p class="full-caption"> 'Don’t ever say love me (Feat. RM of BTS)</p>
+                <p class="full-caption">Live Clip Sketch - BTS (방탄소년단)</p>
+                <p class="view">4.9M views <span class="bi bi-dot"></span>6 month ago</p>
+              </div>
+            </div>  
+          </div>
+
+          
+
+           
+       </main>
+    </section>
+    
+</body>
+</html>
